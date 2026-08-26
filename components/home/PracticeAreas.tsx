@@ -11,7 +11,7 @@ import { practiceAreas } from "@/lib/data/portfolio";
 
 export function PracticeAreas() {
   return (
-    <section className="bg-background">
+    <section className="section-band-light border-b border-border/70">
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
         <ScrollReveal>
           <SectionHeading

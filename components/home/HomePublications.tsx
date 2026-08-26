@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 export function HomePublications() {
   return (
-    <section className="bg-parchment">
+    <section className="section-band-light border-b border-border/70">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <ScrollReveal>
           <SectionHeading

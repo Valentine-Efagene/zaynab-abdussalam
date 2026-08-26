@@ -114,13 +114,6 @@
     rgba(33, 30, 23, 0.94) 0%,
     rgba(33, 30, 23, 0.9) 100%
   );
-  --law-overlay-parchment: linear-gradient(
-    100deg,
-    rgba(245, 238, 223, 0.78) 0%,
-    rgba(232, 223, 200, 0.62) 40%,
-    rgba(232, 223, 200, 0.48) 72%,
-    rgba(232, 223, 200, 0.38) 100%
-  );
 }
 
 @layer base {
@@ -166,8 +159,30 @@
     background: var(--law-overlay-footer);
   }
 
-  .law-overlay-parchment {
-    background: var(--law-overlay-parchment);
+  .section-band-light {
+    @apply bg-background;
+  }
+
+  .section-band-warm {
+    @apply bg-parchment;
+  }
+
+  .section-band-textured {
+    @apply relative overflow-hidden bg-parchment;
+  }
+
+  .section-band-textured::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/images/law/footer-bg.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.34;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 58%);
+    mask-image: linear-gradient(to right, transparent 0%, black 58%);
+    pointer-events: none;
   }
 
   .surface-bezel {
