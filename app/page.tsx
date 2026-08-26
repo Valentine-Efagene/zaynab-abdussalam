@@ -1,5 +1,8 @@
 import { Hero } from "@/components/home/Hero";
 import { Highlights } from "@/components/home/Highlights";
+import { HomeContact } from "@/components/home/HomeContact";
+import { HomeExperience } from "@/components/home/HomeExperience";
+import { HomePublications } from "@/components/home/HomePublications";
 import { PracticeAreas } from "@/components/home/PracticeAreas";
 
 export default function HomePage() {
@@ -8,6 +11,9 @@ export default function HomePage() {
       <Hero />
       <Highlights />
       <PracticeAreas />
+      <HomeExperience />
+      <HomePublications />
+      <HomeContact />
     </>
   );
 }

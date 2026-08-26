@@ -114,6 +114,13 @@
     rgba(33, 30, 23, 0.94) 0%,
     rgba(33, 30, 23, 0.9) 100%
   );
+  --law-overlay-parchment: linear-gradient(
+    100deg,
+    rgba(245, 238, 223, 0.78) 0%,
+    rgba(232, 223, 200, 0.62) 40%,
+    rgba(232, 223, 200, 0.48) 72%,
+    rgba(232, 223, 200, 0.38) 100%
+  );
 }
 
 @layer base {
@@ -157,6 +164,10 @@
 
   .law-overlay-footer {
     background: var(--law-overlay-footer);
+  }
+
+  .law-overlay-parchment {
+    background: var(--law-overlay-parchment);
   }
 
   .surface-bezel {

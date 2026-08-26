@@ -9,6 +9,7 @@ interface LawBackgroundProps {
   overlayClassName?: string;
   overlayStyle?: CSSProperties;
   imagePosition?: string;
+  imageSize?: string;
 }
 
 export function LawBackground({
@@ -19,6 +20,7 @@ export function LawBackground({
   overlayClassName,
   overlayStyle,
   imagePosition = "center",
+  imageSize = "cover",
 }: LawBackgroundProps) {
   const mobile = mobileImage ?? image;
 
@@ -36,10 +38,12 @@ export function LawBackground({
               "--law-bg-mobile": `url(${mobile})`,
               "--law-bg-desktop": `url(${image})`,
               backgroundPosition: imagePosition,
+              backgroundSize: imageSize,
             } as CSSProperties)
           : {
               backgroundImage: `url(${image})`,
               backgroundPosition: imagePosition,
+              backgroundSize: imageSize,
             }
       }
     >
