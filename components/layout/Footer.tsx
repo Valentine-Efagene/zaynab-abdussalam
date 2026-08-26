@@ -8,17 +8,18 @@ export function Footer() {
 
   return (
     <LawBackground
-      image="/images/law/footer-bg.png"
-      overlayClassName="law-overlay-section"
-      className="mt-auto border-t border-border/70 text-cream"
+      image="/images/law/general-bg.png"
+      overlayClassName="law-overlay-footer"
+      imagePosition="65% center"
+      className="mt-auto border-t border-cream/10 text-cream"
     >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr]">
           <div>
-            <p className="font-heading text-2xl tracking-tight">
+            <p className="font-heading text-2xl tracking-tight text-cream">
               {profile.shortName}
             </p>
-            <p className="mt-3 max-w-md text-sm leading-relaxed text-cream/70">
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-cream/80">
               {profile.title} at {profile.firm}. Certified Arbitrator &amp;
               Mediator and Insolvency Practitioner based in Lagos, Nigeria.
             </p>
@@ -28,7 +29,7 @@ export function Footer() {
               <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.2em] text-gold">
                 Navigate
               </p>
-              <ul className="space-y-2 text-sm text-cream/80">
+              <ul className="space-y-2 text-sm text-cream/90">
                 {navLinks.map((link) => (
                   <li key={link.href}>
                     <Link
@@ -45,7 +46,7 @@ export function Footer() {
               <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.2em] text-gold">
                 Connect
               </p>
-              <ul className="space-y-2 text-sm text-cream/80">
+              <ul className="space-y-2 text-sm text-cream/90">
                 <li>
                   <a
                     href={`mailto:${profile.email}`}
@@ -76,8 +77,8 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <Separator className="my-8 bg-cream/15" />
-        <p className="text-xs text-cream/50">
+        <Separator className="my-8 bg-cream/20" />
+        <p className="text-xs text-cream/65">
           © {year} {profile.shortName}. All rights reserved.
         </p>
       </div>

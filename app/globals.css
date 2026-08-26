@@ -59,7 +59,7 @@
   --gold: #ccbd99;
   --bronze: #7d652b;
   --charcoal: #211e17;
-  --parchment: #f0e8d6;
+  --parchment: #e8dfc8;
 
   --background: #f5eedf;
   --foreground: #211e17;
@@ -72,7 +72,7 @@
   --secondary: #e8dfc8;
   --secondary-foreground: #211e17;
   --muted: #ede4d2;
-  --muted-foreground: #6b5f4f;
+  --muted-foreground: #5c5346;
   --accent: #ccbd99;
   --accent-foreground: #211e17;
   --destructive: oklch(0.577 0.245 27.325);
@@ -109,6 +109,11 @@
     rgba(232, 223, 200, 0.08) 100%
   );
   --law-overlay-section: rgba(33, 30, 23, 0.82);
+  --law-overlay-footer: linear-gradient(
+    180deg,
+    rgba(33, 30, 23, 0.94) 0%,
+    rgba(33, 30, 23, 0.9) 100%
+  );
 }
 
 @layer base {
@@ -150,12 +155,16 @@
     background: var(--law-overlay-section);
   }
 
+  .law-overlay-footer {
+    background: var(--law-overlay-footer);
+  }
+
   .surface-bezel {
-    @apply rounded-[1.75rem] border border-border/70 bg-secondary/50 p-1.5;
+    @apply rounded-[1.75rem] border border-charcoal/10 bg-secondary/70 p-1.5;
   }
 
   .surface-card {
-    @apply rounded-[calc(1.75rem-0.375rem)] border border-border/60 bg-card shadow-none;
+    @apply rounded-[calc(1.75rem-0.375rem)] border border-charcoal/10 bg-card shadow-[inset_0_1px_0_rgba(255,255,255,0.35)];
   }
 
   .law-section-heading {
