@@ -12,6 +12,7 @@ import { Separator } from "@/components/ui/separator";
 import { LawBackground } from "@/components/LawBackground";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { createPageMetadata } from "@/lib/metadata";
 import {
   associations,
   awards,
@@ -20,10 +21,11 @@ import {
   profile,
 } from "@/lib/data/portfolio";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "About",
   description: `About ${profile.shortName} — education, awards, certifications, and leadership.`,
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
@@ -39,6 +41,7 @@ export default function AboutPage() {
               eyebrow="About"
               title="A first-class advocate with a commercial instinct"
               description={profile.bio}
+              headingLevel={1}
               className="mb-0 law-section-heading"
             />
           </ScrollReveal>

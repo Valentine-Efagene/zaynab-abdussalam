@@ -10,12 +10,14 @@ import {
 import { LawBackground } from "@/components/LawBackground";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { createPageMetadata } from "@/lib/metadata";
 import { profile } from "@/lib/data/portfolio";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Contact",
   description: `Contact ${profile.shortName} — email, phone, and LinkedIn.`,
-};
+  path: "/contact",
+});
 
 const contactItems = [
   {
@@ -59,6 +61,7 @@ export default function ContactPage() {
               eyebrow="Contact"
               title="Available for legal opportunities and collaboration"
               description="Reach out directly by email or phone, or connect on LinkedIn."
+              headingLevel={1}
               className="mb-0 law-section-heading"
             />
           </ScrollReveal>

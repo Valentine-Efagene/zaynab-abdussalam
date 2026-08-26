@@ -3,12 +3,14 @@ import { LawBackground } from "@/components/LawBackground";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { PublicationList } from "@/components/publications/PublicationList";
+import { createPageMetadata } from "@/lib/metadata";
 import { profile } from "@/lib/data/portfolio";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Publications",
   description: `Publications and research by ${profile.shortName} on energy, commercial, and public law.`,
-};
+  path: "/publications",
+});
 
 export default function PublicationsPage() {
   return (
@@ -23,6 +25,7 @@ export default function PublicationsPage() {
             <SectionHeading
               eyebrow="Writing"
               title="Thought leadership across energy and commercial law"
+              headingLevel={1}
               className="mb-0 law-section-heading"
             />
           </ScrollReveal>

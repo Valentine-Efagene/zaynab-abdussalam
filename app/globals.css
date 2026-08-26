@@ -194,7 +194,7 @@
   }
 
   .law-section-heading {
-    @apply text-cream [&_h2]:text-cream [&_p]:text-cream/75 [&_span]:border-gold/30 [&_span]:bg-cream/10 [&_span]:text-gold;
+    @apply text-cream [&_h1]:text-cream [&_h2]:text-cream [&_p]:text-cream/75 [&_span]:border-gold/30 [&_span]:bg-cream/10 [&_span]:text-gold;
   }
 
   .animate-rise {

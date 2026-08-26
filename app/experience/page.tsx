@@ -3,12 +3,14 @@ import { LawBackground } from "@/components/LawBackground";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ExperienceTimeline } from "@/components/experience/ExperienceTimeline";
+import { createPageMetadata } from "@/lib/metadata";
 import { profile } from "@/lib/data/portfolio";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Experience",
   description: `Professional experience of ${profile.shortName} across energy, corporate advisory, and dispute resolution.`,
-};
+  path: "/experience",
+});
 
 export default function ExperiencePage() {
   return (
@@ -24,6 +26,7 @@ export default function ExperiencePage() {
               eyebrow="Experience"
               title="Practice shaped by high-stakes energy and commercial work"
               description="From regulatory opinions for international operators to multi-billion naira disputes, a record of careful drafting and decisive advocacy."
+              headingLevel={1}
               className="mb-0 law-section-heading"
             />
           </ScrollReveal>
