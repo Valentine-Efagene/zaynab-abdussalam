@@ -26,16 +26,16 @@ export function MobileNav() {
           <Button
             variant="outline"
             size="icon"
-            className="rounded-full border-border bg-card/60 md:hidden"
+            className="rounded-full border-border bg-secondary/60 md:hidden"
             aria-label="Open menu"
           />
         }
       >
         <Menu className="size-5" strokeWidth={1.5} />
       </SheetTrigger>
-      <SheetContent side="right" className="w-[min(100%,20rem)] bg-cream">
+      <SheetContent side="right" className="w-[min(100%,20rem)] bg-background">
         <SheetHeader>
-          <SheetTitle className="font-heading text-left text-xl">
+          <SheetTitle className="font-heading text-left text-xl text-charcoal">
             {profile.shortName}
           </SheetTitle>
         </SheetHeader>

@@ -43,6 +43,7 @@
   --color-gold: var(--gold);
   --color-bronze: var(--bronze);
   --color-charcoal: var(--charcoal);
+  --color-parchment: var(--parchment);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -58,24 +59,25 @@
   --gold: #ccbd99;
   --bronze: #7d652b;
   --charcoal: #211e17;
+  --parchment: #f0e8d6;
 
   --background: #f5eedf;
   --foreground: #211e17;
-  --card: #fffcf7;
+  --card: #f0e8d6;
   --card-foreground: #211e17;
-  --popover: #fffcf7;
+  --popover: #f0e8d6;
   --popover-foreground: #211e17;
   --primary: #7d652b;
   --primary-foreground: #f5eedf;
   --secondary: #e8dfc8;
   --secondary-foreground: #211e17;
-  --muted: #ebe3d0;
-  --muted-foreground: #5c5346;
+  --muted: #ede4d2;
+  --muted-foreground: #6b5f4f;
   --accent: #ccbd99;
   --accent-foreground: #211e17;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #d9ceb0;
-  --input: #d9ceb0;
+  --border: #d4c4a8;
+  --input: #d4c4a8;
   --ring: #7d652b;
   --chart-1: #7d652b;
   --chart-2: #ccbd99;
@@ -83,14 +85,30 @@
   --chart-4: #a8946a;
   --chart-5: #5c5346;
   --radius: 0.75rem;
-  --sidebar: #fffcf7;
+  --sidebar: #f0e8d6;
   --sidebar-foreground: #211e17;
   --sidebar-primary: #7d652b;
   --sidebar-primary-foreground: #f5eedf;
   --sidebar-accent: #e8dfc8;
   --sidebar-accent-foreground: #211e17;
-  --sidebar-border: #d9ceb0;
+  --sidebar-border: #d4c4a8;
   --sidebar-ring: #7d652b;
+
+  /* Law section overlays */
+  --law-overlay-hero: linear-gradient(
+    105deg,
+    rgba(33, 30, 23, 0.88) 0%,
+    rgba(33, 30, 23, 0.72) 45%,
+    rgba(33, 30, 23, 0.42) 100%
+  );
+  --law-overlay-hero-light: linear-gradient(
+    100deg,
+    rgba(245, 238, 223, 0.84) 0%,
+    rgba(245, 238, 223, 0.58) 38%,
+    rgba(240, 232, 214, 0.22) 62%,
+    rgba(232, 223, 200, 0.08) 100%
+  );
+  --law-overlay-section: rgba(33, 30, 23, 0.82);
 }
 
 @layer base {
@@ -118,6 +136,30 @@
 
   .ease-premium {
     transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .law-overlay-hero {
+    background: var(--law-overlay-hero);
+  }
+
+  .law-overlay-hero-light {
+    background: var(--law-overlay-hero-light);
+  }
+
+  .law-overlay-section {
+    background: var(--law-overlay-section);
+  }
+
+  .surface-bezel {
+    @apply rounded-[1.75rem] border border-border/70 bg-secondary/50 p-1.5;
+  }
+
+  .surface-card {
+    @apply rounded-[calc(1.75rem-0.375rem)] border border-border/60 bg-card shadow-none;
+  }
+
+  .law-section-heading {
+    @apply text-cream [&_h2]:text-cream [&_p]:text-cream/75 [&_span]:border-gold/30 [&_span]:bg-cream/10 [&_span]:text-gold;
   }
 
   .animate-rise {

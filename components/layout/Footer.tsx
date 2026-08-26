@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { LawBackground } from "@/components/LawBackground";
 import { navLinks, profile } from "@/lib/data/portfolio";
 
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-border/70 bg-charcoal text-cream">
+    <LawBackground
+      image="/images/law/footer-bg.png"
+      overlayClassName="law-overlay-section"
+      className="mt-auto border-t border-border/70 text-cream"
+    >
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr]">
           <div>
@@ -67,15 +72,6 @@ export function Footer() {
                     LinkedIn
                   </a>
                 </li>
-                <li>
-                  <a
-                    href={profile.cvPath}
-                    download
-                    className="transition-colors duration-300 ease-premium hover:text-gold"
-                  >
-                    Download CV
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
@@ -85,6 +81,6 @@ export function Footer() {
           © {year} {profile.shortName}. All rights reserved.
         </p>
       </div>
-    </footer>
+    </LawBackground>
   );
 }

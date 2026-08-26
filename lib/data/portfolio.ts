@@ -12,7 +12,6 @@ export const profile = {
   location: "Borno Way, Adekunle, Yaba, Lagos, Nigeria",
   locationShort: "Lagos, Nigeria",
   image: "/images/zaynab-headshot.jpg",
-  cvPath: "/cv/zaynab-abdussalam-cv.pdf",
 } as const;
 
 export const navLinks = [
@@ -218,7 +217,7 @@ export const publications = [
   {
     title:
       "Attorney General of the Federation v. Attorney General of Abia State & Ors (2024) LPELR-62576(SC): Was the purposive interpretation justified?",
-    url: "https://www.lexology.com/library/detail.aspx?g=",
+    url: "https://www.lexology.com/library/detail.aspx?g=2aaa8280-df91-4e7e-96d8-223ffe122d14",
     year: "2024",
     source: "Lexology",
     featured: true,

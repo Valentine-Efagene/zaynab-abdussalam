@@ -27,7 +27,7 @@ export function PublicationList() {
             const hasUrl = Boolean(pub.url && !pub.url.endsWith("g="));
             const CardInner = (
               <div className="h-full rounded-[1.75rem] border border-border/70 bg-secondary/30 p-1.5 transition-colors duration-500 ease-premium group-hover:border-bronze/40">
-                <Card className="h-full rounded-[calc(1.75rem-0.375rem)] border-border/50 bg-card shadow-none">
+                <Card className="surface-card h-full">
                   <CardHeader className="gap-3">
                     <div className="flex items-center justify-between gap-3">
                       <Badge
@@ -38,7 +38,11 @@ export function PublicationList() {
                       </Badge>
                       {hasUrl ? (
                         <span className="inline-flex size-8 items-center justify-center rounded-full bg-secondary text-charcoal transition-transform duration-500 ease-premium group-hover:translate-x-0.5 group-hover:-translate-y-px">
-                          <ArrowUpRight className="size-4" strokeWidth={1.5} />
+                          <ArrowUpRight
+                            className="size-4"
+                            strokeWidth={1.5}
+                            aria-hidden="true"
+                          />
                         </span>
                       ) : null}
                     </div>
@@ -84,7 +88,7 @@ export function PublicationList() {
           />
         </ScrollReveal>
         <div className="rounded-[1.75rem] border border-border/70 bg-secondary/30 p-1.5">
-          <Card className="rounded-[calc(1.75rem-0.375rem)] border-border/50 bg-card shadow-none">
+          <Card className="surface-card">
             <ul className="divide-y divide-border/70">
               {researchWorks.map((work, index) => (
                 <ScrollReveal key={work.title} delay={index * 40}>

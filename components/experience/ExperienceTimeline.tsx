@@ -14,7 +14,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SectionHeading } from "@/components/SectionHeading";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { experience } from "@/lib/data/portfolio";
 
@@ -34,8 +33,8 @@ export function ExperienceTimeline() {
                 aria-hidden
                 className="absolute top-6 left-0 hidden size-3 rounded-full border-2 border-bronze bg-cream md:block"
               />
-              <div className="rounded-[1.75rem] border border-border/70 bg-secondary/30 p-1.5">
-                <Card className="rounded-[calc(1.75rem-0.375rem)] border-border/50 bg-card shadow-none">
+              <div className="surface-bezel h-full">
+                <Card className="surface-card">
                   <CardHeader className="gap-3">
                     <div className="flex flex-wrap items-center gap-2">
                       <Badge
@@ -73,7 +72,10 @@ export function ExperienceTimeline() {
                               <ul className="space-y-3 pb-2 text-sm leading-relaxed text-muted-foreground">
                                 {team.highlights.map((point) => (
                                   <li key={point} className="flex gap-2.5">
-                                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                                    <span
+                                      className="mt-2 size-1.5 shrink-0 rounded-full bg-gold"
+                                      aria-hidden="true"
+                                    />
                                     <span>{point}</span>
                                   </li>
                                 ))}
@@ -86,7 +88,10 @@ export function ExperienceTimeline() {
                       <ul className="space-y-3 text-sm leading-relaxed text-muted-foreground">
                         {role.teams[0]?.highlights.map((point) => (
                           <li key={point} className="flex gap-2.5">
-                            <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
+                            <span
+                              className="mt-2 size-1.5 shrink-0 rounded-full bg-gold"
+                              aria-hidden="true"
+                            />
                             <span>{point}</span>
                           </li>
                         ))}
