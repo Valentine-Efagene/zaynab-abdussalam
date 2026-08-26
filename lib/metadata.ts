@@ -3,7 +3,7 @@ import { profile } from "@/lib/data/portfolio";
 
 export const siteUrl = "https://zaynababdussalam.com";
 
-export const siteDescription = `${profile.title} at ${profile.firm}. Certified Arbitrator & Mediator based in ${profile.locationShort}.`;
+export const siteDescription = `${profile.title} at Streamsowers and Kohn. Certified Arbitrator and Mediator based in ${profile.locationShort}.`;
 
 export const ogImage = {
   url: profile.image,

@@ -20,7 +20,7 @@ export function Footer() {
               {profile.shortName}
             </p>
             <p className="mt-3 max-w-md text-sm leading-relaxed text-cream/80">
-              {profile.title} at {profile.firm}. Certified Arbitrator &amp;
+              {profile.title} at {profile.firm}. Certified Arbitrator &
               Mediator and Insolvency Practitioner based in Lagos, Nigeria.
             </p>
           </div>
