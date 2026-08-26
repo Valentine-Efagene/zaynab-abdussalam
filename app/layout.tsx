@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Source_Sans_3, Geist_Mono } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
-import { profile } from "@/lib/data/portfolio";
+import { siteMetadata } from "@/lib/metadata";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -21,20 +21,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://zaynababdussalam.com"),
-  title: {
-    default: `${profile.shortName} | Lawyer Portfolio`,
-    template: `%s | ${profile.shortName}`,
-  },
-  description: profile.bio,
-  openGraph: {
-    title: `${profile.shortName} | Lawyer Portfolio`,
-    description: `${profile.title} at ${profile.firm}. Certified Arbitrator & Mediator.`,
-    type: "website",
-    images: [{ url: profile.image }],
-  },
-};
+export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
