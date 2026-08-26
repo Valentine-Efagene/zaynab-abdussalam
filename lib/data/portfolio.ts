@@ -1,7 +1,7 @@
 export const profile = {
   name: "Zaynab Omobolanle Abdussalam",
   shortName: "Zaynab Abdussalam",
-  title: "Associate · Energy & Natural Resources",
+  title: "Associate · Dispute Resolution",
   firm: "Streamsowers & Kohn",
   bio: "Zaynab is a highly motivated, excellence-driven, and resourceful lawyer. She is a certified Arbitrator & Mediator and an Insolvency Practitioner. She consistently offers effective, business and client-centric solutions, and her proficiency in dispute resolution, corporate and commercial law, and energy and natural resources, combined with her enthusiasm for learning and strong organizational and analytical skills, makes her a valuable asset to any team of outstanding legal professionals.",
   email: "abdussalamzaynab@gmail.com",

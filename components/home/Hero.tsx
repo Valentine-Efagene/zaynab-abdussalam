@@ -26,7 +26,7 @@ export function Hero() {
           </p>
           <p className="animate-rise-delay-2 mt-5 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg">
             Certified Arbitrator &amp; Mediator and Insolvency Practitioner,
-            advising on energy, corporate, and dispute resolution matters with a
+            advising on dispute resolution, corporate, and energy matters with a
             business-focused approach.
           </p>
           <div className="animate-rise-delay-3 mt-8">

@@ -64,10 +64,11 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
-                Currently an Associate on the Energy and Natural Resources team
+                Currently an Associate on the Dispute Resolution team
                 at <span className="text-charcoal">{profile.firm}</span>, Zaynab
                 brings first-class academic credentials and hands-on experience
-                across upstream, midstream, and corporate mandates.
+                across dispute resolution, corporate advisory, and energy
+                mandates.
               </p>
               <p>
                 She is a Member of the Institute of Chartered Mediators and
