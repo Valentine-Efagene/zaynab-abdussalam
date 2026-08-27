@@ -24,14 +24,19 @@ export const navLinks = [
 
 export const practiceAreas = [
   {
-    title: "Energy & Natural Resources",
-    description:
-      "Advisory on petroleum licensing, LPG operations, decommissioning obligations, Nigerian Content guidelines, and midstream regulatory frameworks under the Petroleum Industry Act 2021.",
-  },
-  {
     title: "Dispute Resolution",
     description:
       "Representation in high-value commercial, tax, and environmental disputes, including arbitration and mediation support for energy and corporate clients.",
+  },
+  {
+    title: "Data Protection",
+    description:
+      "Advisory on NDPA compliance, privacy policies, data processing agreements, breach response, and regulatory engagement for organisations handling personal data in Nigeria.",
+  },
+  {
+    title: "Energy & Natural Resources",
+    description:
+      "Advisory on petroleum licensing, LPG operations, decommissioning obligations, Nigerian Content guidelines, and midstream regulatory frameworks under the Petroleum Industry Act 2021.",
   },
   {
     title: "Corporate Advisory",
@@ -41,7 +46,7 @@ export const practiceAreas = [
   {
     title: "Regulatory Compliance",
     description:
-      "Guidance on CAC filings, NMDPRA frameworks, data protection, and sector-specific licensing for energy and corporate clients operating in Nigeria.",
+      "Guidance on CAC filings, NMDPRA frameworks, and sector-specific licensing for energy and corporate clients operating in Nigeria.",
   },
 ] as const;
 

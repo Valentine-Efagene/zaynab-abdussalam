@@ -16,7 +16,7 @@ export function PracticeAreas() {
         <ScrollReveal>
           <SectionHeading
             eyebrow="Practice"
-            title="Focused counsel across energy, corporate, and disputes"
+            title="Focused counsel across disputes, data protection, and corporate matters"
             description="Clear, practical advice grounded in regulatory fluency and commercial awareness."
           />
         </ScrollReveal>

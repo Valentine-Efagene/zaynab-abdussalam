@@ -22,8 +22,9 @@ export function PersonJsonLd() {
     },
     sameAs: [profile.linkedin],
     knowsAbout: [
-      "Energy Law",
       "Dispute Resolution",
+      "Data Protection",
+      "Energy Law",
       "Corporate Law",
       "Regulatory Compliance",
     ],
